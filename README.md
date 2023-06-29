@@ -7,7 +7,7 @@ Adaptation of MVSep-MXD23 algorithm for Colab with few tweaks:
 
 
 
-https://colab.research.google.com/github/deton24/MVSEP-MDX23-Colab_v2.1/blob/main/MVSep-MDX23-Colab.ipynb
+[https://colab.research.google.com/github/deton24/MVSEP-MDX23-Colab_v2.1/blob/main/MVSep-MDX23-Colab.ipynb](https://colab.research.google.com/github/deton24/MVSEP-MDX23-Colab_v2.1/blob/main/MVSep_MDX23_Colab.ipynb)
 
 300000 chunks_size is necessary in MDX23 for 5:30 track to avoid CUDA memory issues.
 Default 500K for 3:46 was fine. 
