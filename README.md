@@ -1,9 +1,11 @@
 Adaptation of MVSep-MXD23 algorithm for Colab with few tweaks:
 
 * Updated with voc_ft instead of Kim Vocal 2 or Kim Vocal 1, and UVR MDX Instr HQ3 instead of Kim Inst
+* Divider tweak
+
+Previously in 2.0 by Jarredou
 * Fixed unprocessed high frequency bleed in vocals stem (vocals stem is now really fullband!).
 * Added volume compensation (less bleed in overall).
-* divider tweak
 
 
 
