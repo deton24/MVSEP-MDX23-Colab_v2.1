@@ -1,7 +1,6 @@
 Adaptation of MVSep-MXD23 algorithm for Colab with few tweaks:
 
-2.1
-Fork of jarredou Colab
+2.1 - fork of jarredou Colab
 * Updated with voc_ft instead of Kim Vocal 2 or Kim Vocal 1, and UVR MDX Instr HQ3 instead of Kim Inst
 * Divider tweak
 
@@ -13,6 +12,7 @@ v. 2.1
 [https://colab.research.google.com/github/deton24/MVSEP-MDX23-Colab_v2.1/blob/main/MVSep-MDX23-Colab.ipynb](https://colab.research.google.com/github/deton24/MVSEP-MDX23-Colab_v2.1/blob/main/MVSep_MDX23_Colab.ipynb)
 
 v. 2.4 by jarredou
+[https://colab.research.google.com/github/deton24/MVSEP-MDX23-Colab_v2.1/blob/main/MVSep-MDX23-Colab.ipynb](https://colab.research.google.com/github/deton24/MVSEP-MDX23-Colab_v2.1/blob/main/MVSep_MDX23_Colab.ipynb)
 https://colab.research.google.com/github/jarredou/MVSEP-MDX23-Colab_v2/blob/v2.4/MVSep-MDX23-Colab.ipynb
 
 300000 chunks_size is necessary in MDX23 for 5:30 track to avoid CUDA memory issues.
