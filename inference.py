@@ -521,7 +521,7 @@ class EnsembleDemucsMDXMusicSeparationModel:
 
         vocals_model_names = [
             "BSRoformer",
-            "SCNetXL"
+            "SCNetXL",
             "Kim_MelRoformer",
             "InstVoc",
             "VitLarge",
