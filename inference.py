@@ -552,7 +552,7 @@ class EnsembleDemucsMDXMusicSeparationModel:
 
                 elif model_name == "SCNetXL":
                     print(f'Processing vocals with {model_name} model...')
-                    sources_scnet = demix_new_wrapper(mixed_sound_array.T, self.device, self.model_musdb18_scnet_xl, self.config_musdb18_scnet_xl, dim_t=256, bigshifts=options["BigShifts"])
+                    sources_scnet = demix_new_wrapper(mixed_sound_array.T, self.device, self.model_scnet, self.config_scnet, dim_t=256, bigshifts=options["BigShifts"])
                     vocals_scnet = match_array_shapes(sources_scnet, mixed_sound_array.T)
                     vocals_model_outputs.append(vocals_scnet)
                     if not options['large_gpu']:
