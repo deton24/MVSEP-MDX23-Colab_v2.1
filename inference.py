@@ -454,7 +454,7 @@ class EnsembleDemucsMDXMusicSeparationModel:
             print(f'Loading {model_name} into memory')   
             remote_url_ckpt = 'https://github.com/ZFTurbo/Music-Source-Separation-Training/releases/download/v1.0.13/model_scnet_ep_54_sdr_9.8051.ckpt'
             remote_url_yaml = 'https://github.com/ZFTurbo/Music-Source-Separation-Training/releases/download/v1.0.13/config_musdb18_scnet_xl.yaml'
-            self.model_scnet, self.config_scnet = self.load_model('SCNetXL', remote_url_ckpt, remote_url_yaml, SCNetXL)
+            self.model_scnet, self.config_scnet = self.load_model('model_scnet_ep_54_sdr_9.8051', remote_url_ckpt, remote_url_yaml, SCNet)
 
         elif model_name == "Kim_MelRoformer" and not hasattr(self, 'model_melrofo'):
             print(f'Loading {model_name} into memory')
