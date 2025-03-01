@@ -450,17 +450,17 @@ class EnsembleDemucsMDXMusicSeparationModel:
             remote_url_yaml = f'https://raw.githubusercontent.com/TRvlvr/application_data/main/mdx_model_data/mdx_c_configs/{bs_model_name}.yaml'
             self.model_bsrofo, self.config_bsrofo = self.load_model(bs_model_name, remote_url_ckpt, remote_url_yaml, BSRoformer)
 
-        elif model_name == "SCNetXL" and not hasattr(self, 'model_scnet'):
-            print(f'Loading {model_name} into memory')   
-            remote_url_ckpt = 'https://github.com/ZFTurbo/Music-Source-Separation-Training/releases/download/v1.0.13/model_scnet_ep_54_sdr_9.8051.ckpt'
-            remote_url_yaml = 'https://github.com/ZFTurbo/Music-Source-Separation-Training/releases/download/v1.0.13/config_musdb18_scnet_xl.yaml'
-            self.model_scnet, self.config_scnet = self.load_model('model_scnet_ep_54_sdr_9.8051', remote_url_ckpt, remote_url_yaml, SCNet)
-
         elif model_name == "Kim_MelRoformer" and not hasattr(self, 'model_melrofo'):
             print(f'Loading {model_name} into memory')
             remote_url_ckpt = f'https://huggingface.co/KimberleyJSN/melbandroformer/resolve/main/MelBandRoformer.ckpt'
             remote_url_yaml = f'https://raw.githubusercontent.com/ZFTurbo/Music-Source-Separation-Training/main/configs/KimberleyJensen/config_vocals_mel_band_roformer_kj.yaml'
             self.model_melrofo, self.config_melrofo = self.load_model('Kim_MelRoformer', remote_url_ckpt, remote_url_yaml, MelBandRoformer)
+
+        elif model_name == "SCNetXL" and not hasattr(self, 'model_scnet'):
+            print(f'Loading {model_name} into memory')   
+            remote_url_ckpt = 'https://github.com/ZFTurbo/Music-Source-Separation-Training/releases/download/v1.0.13/model_scnet_ep_54_sdr_9.8051.ckpt'
+            remote_url_yaml = 'https://github.com/ZFTurbo/Music-Source-Separation-Training/releases/download/v1.0.13/config_musdb18_scnet_xl.yaml'
+            self.model_scnet, self.config_scnet = self.load_model('model_scnet_ep_54_sdr_9.8051', remote_url_ckpt, remote_url_yaml, SCNet)
 
         elif model_name == "InstVoc" and not hasattr(self, 'model_mdxv3'):
             print(f'Loading {model_name} into memory')
