@@ -1,3 +1,7 @@
+The Colab is defunct for now. Here are some instructions to fix it:
+https://msst-bible.pages.dev/mdx23-by-zfturbo-jarredou-fork---2-4-stems
+____
+
 Adaptation of MVSep-MXD23 algorithm for Colab with few tweaks:
 
 2.1 - fork of jarredou Colab
